@@ -1,0 +1,25 @@
+{
+  "name": "ninjaone-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:cucumber && npm run report:html",
+    "test:cucumber": "FORCE_COLOR=0 cucumber-js",
+    "report:html": "node support/generateReport.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2",
+    "dotenv": "^17.2.2",
+    "multiple-cucumber-html-reporter": "^3.9.3",
+    "strip-ansi": "^7.1.2"
+  },
+  "dependencies": {
+    "otplib": "^12.0.1"
+  }
+}
